@@ -12945,7 +12945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalSpeed: 5
-  jumpSpeed: 600
+  jumpSpeed: 550
   feet: {fileID: 1583197992}
   feetWidth: 0.46
   feetheight: 0.06
@@ -12953,6 +12953,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
+  delayForDoubleJump: 0.2
 --- !u!1 &2058436135
 GameObject:
   m_ObjectHideFlags: 0
