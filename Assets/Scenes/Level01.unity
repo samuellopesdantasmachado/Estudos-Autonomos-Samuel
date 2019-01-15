@@ -816,7 +816,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 29.3, y: -26.2}
+  m_AnchoredPosition: {x: 29.299988, y: -26.2}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.50000083, y: 0.49999976}
 --- !u!114 &227765422
@@ -938,7 +938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &240141364
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16523,6 +16523,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 765008432}
   playerPrefab: {fileID: 1004776287681820, guid: 9887e603001a86645943cc3046b3200a,
     type: 2}
+  maxTime: 120
   ui:
     hud:
       txtCoinCount: {fileID: 527033044}
@@ -17152,7 +17153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 137.7, y: 29.900047}
+  m_AnchoredPosition: {x: 137.70001, y: 29.900047}
   m_SizeDelta: {x: 160, y: 47.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2124456571
