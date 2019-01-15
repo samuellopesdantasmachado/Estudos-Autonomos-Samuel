@@ -7,6 +7,7 @@ TagManager:
   - BackGround
   - Ground
   - Coin
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX
