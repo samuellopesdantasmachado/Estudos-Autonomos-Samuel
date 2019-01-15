@@ -98,6 +98,7 @@ using UnityEngine;
         void Jump(){
 		    if(isGrounded){
 			   isJumping = true;
+			   AudioManager.instance.PlayJumpSound(gameObject);
 			   rb.AddForce(new Vector2(0f, jumpSpeed));
 			   anim.SetInteger("State", 1);
 
@@ -106,6 +107,7 @@ using UnityEngine;
 
             if (canDoubleJump && !isGrounded){
 				rb.velocity = Vector2.zero;
+				AudioManager.instance.PlayJumpSound(gameObject);
 				rb.AddForce(new Vector2(0f, jumpSpeed));
 				anim.SetInteger("State", 1);
 				canDoubleJump = false;
@@ -125,6 +127,7 @@ using UnityEngine;
 
 		void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.CompareTag("Coin")){
+			AudioManager.instance.PlayCoinPickupSound(other.gameObject);
 			SFXManager.instance.ShowCoinParticles(other.gameObject);
 			Destroy(other.gameObject);
 		}
