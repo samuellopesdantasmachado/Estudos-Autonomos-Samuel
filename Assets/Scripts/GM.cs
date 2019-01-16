@@ -137,9 +137,11 @@ public class GM : MonoBehaviour {
 			Destroy(player.gameObject, timeToKill);
 			DecrementLives();
 			if (data.lifeCount > 0){
+				StartCoroutine(MuteMusic(false, 0f));
 			    Invoke("RespawnPlayer", timeToKill + timeToRespawn);
 			}
 			else {
+				StartCoroutine(MuteMusic(true, timeToKill + timeToRespawn));
 				GameOver();
 			}
 		}
